@@ -1,0 +1,4 @@
+nextcloud:
+  nextcloud:
+    host: nextcloud.testing.your.domain
+    username: admin
