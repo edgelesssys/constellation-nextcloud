@@ -1,4 +1,5 @@
 # Only deploy the respective ingress object if it does not already exist. Otherwise nginx complains about the host/path already being defined during upgrade.
+{{- if .Values.app.enabled }}
 {{- $exists := lookup "v1" "Ingress" .Release.Namespace "nextcloud-ingress" -}}
 {{ if $exists }}
 {{ else }}
@@ -30,3 +31,4 @@ spec:
               number: 8080
   ingressClassName: nginx
 {{- end -}}
+{{- end }}

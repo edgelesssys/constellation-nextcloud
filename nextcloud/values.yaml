@@ -1,3 +1,9 @@
+# Deployment target settings
+infra:
+  enabled: false
+app:
+  enabled: false
+
 nextcloud:
   nextcloud:
     host: nextcloud.testing.your.domain

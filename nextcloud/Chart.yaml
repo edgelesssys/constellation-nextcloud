@@ -9,8 +9,11 @@ dependencies:
   - name: nextcloud
     version: "4.3.5"
     repository: "https://nextcloud.github.io/helm/"
+    condition: app.enabled
   - name: ingress-nginx
     version: "4.2.5"
     repository: "https://kubernetes.github.io/ingress-nginx"
+    condition: infra.enabled
   - name: external-dns
     version: "0.1.0"
+    condition: infra.enabled

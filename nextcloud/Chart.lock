@@ -8,5 +8,5 @@ dependencies:
 - name: external-dns
   repository: ""
   version: 0.1.0
-digest: sha256:f0247eb8b89fc9dd824bebae0e737bcc1b960a1c6f58065e10f70f49d16b3795
-generated: "2023-10-24T16:00:05.419056644+02:00"
+digest: sha256:428079633e83f2c908a8f848436eeafd16b82308b58d5c3172fcf15440253041
+generated: "2023-10-26T12:47:51.226139416+02:00"
